@@ -80,7 +80,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 									
 									<?php
 										$product = apply_filters( 'wcdn_order_item_product', $order->get_product_from_item( $item ), $item );
-										$item_meta = new WC_Order_Item_Meta( $item['item_meta'], $product );
+										$item_meta = new WC_Order_Item_Meta( $item, $product ); 
 									?>
 									
 									<tr>
